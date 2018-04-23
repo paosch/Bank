@@ -14,4 +14,11 @@ describe Account do
       expect(account.balance).to eq(50)
     end
   end
+
+  describe '#withdraw' do
+    it 'customer can withdraw money from account' do
+      account.withdraw(15)
+      expect(account.balance).to eq(-5)
+    end
+  end
 end
