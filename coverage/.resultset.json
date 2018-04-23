@@ -1,7 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/paosch/Documents/Bank/spec/account_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/paosch/Documents/Bank/lib/account.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ]
     },
-    "timestamp": 1524480238
+    "timestamp": 1524485794
   }
 }
