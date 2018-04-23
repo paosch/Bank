@@ -8,4 +8,9 @@ class Account
   def display_balance
     p "Your current balance is £#{@balance}"
   end
+
+  def deposit(amount)
+    @balance += amount
+    display_balance
+  end
 end
