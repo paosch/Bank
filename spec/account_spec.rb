@@ -1,5 +1,5 @@
 require 'account'
-
+require 'date'
 describe Account do
   subject(:account) { Account.new(10) }
   describe '#display_balance' do
@@ -12,6 +12,11 @@ describe Account do
     it 'customer can deposit money into account' do
       account.deposit(40)
       expect(account.balance).to eq(50)
+    end
+    it 'saves transaction details in transactions array' do
+      date = Date.today.to_s
+      account.deposit(20)
+      expect(account.transactions).to eq([[date, 20, nil, account.balance]])
     end
   end
 
@@ -27,4 +32,5 @@ describe Account do
       expect { account.print_col_names }.to output('Date'.ljust(10) + 'Credit'.center(10) + 'Debit'.center(10) + 'Balance'.rjust(10)).to_stdout
     end
   end
+
 end
