@@ -1,5 +1,5 @@
 require 'account'
-
+require 'date'
 describe Account do
   subject(:account) { Account.new(10) }
   describe '#display_balance' do
@@ -9,9 +9,14 @@ describe Account do
     end
   end
   describe '#deposit' do
-    it 'customer can deposit money' do
+    it 'customer can deposit money into account' do
       account.deposit(40)
       expect(account.balance).to eq(50)
+    end
+    it 'saves transaction details in transactions array' do
+      date = Date.today.to_s
+      account.deposit(20)
+      expect(account.transactions).to eq([[date, 20, '-', account.balance]])
     end
   end
 
@@ -19,6 +24,20 @@ describe Account do
     it 'customer can withdraw money from account' do
       account.withdraw(15)
       expect(account.balance).to eq(-5)
+    end
+  end
+
+  describe '#print_col_names' do
+    it 'displays column names for bank statement table' do
+      expect { account.print_col_names }.to output('Date'.ljust(10) + ' ||' + 'Credit'.center(10) + ' ||' + 'Debit'.center(10) + " ||" + 'Balance'.rjust(10) + "\n").to_stdout
+    end
+  end
+
+  describe '#print_statement' do
+    it 'prints bank statement' do
+      date = Date.today.to_s
+      account.transactions = [[date, 50, '-', 60]]
+      expect { account.print_statement }.to output('Date'.ljust(10) + ' ||' + 'Credit'.center(10) + ' ||' + 'Debit'.center(10) + " ||" + 'Balance'.rjust(10) + "\n" + date.ljust(10) + ' ||' + '50'.center(10) + ' ||' + '-'.center(10) + ' ||' + '60'.rjust(10) + "\n").to_stdout
     end
   end
 end
