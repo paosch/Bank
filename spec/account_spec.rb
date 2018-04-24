@@ -9,7 +9,7 @@ describe Account do
     end
   end
   describe '#deposit' do
-    it 'customer can deposit money' do
+    it 'customer can deposit money into account' do
       account.deposit(40)
       expect(account.balance).to eq(50)
     end
@@ -19,6 +19,12 @@ describe Account do
     it 'customer can withdraw money from account' do
       account.withdraw(15)
       expect(account.balance).to eq(-5)
+    end
+  end
+
+  describe '#print_col_names' do
+    it 'displays column names for bank statement table' do
+      expect { account.print_col_names }.to output('Date'.ljust(10) + 'Credit'.center(10) + 'Debit'.center(10) + 'Balance'.rjust(10)).to_stdout
     end
   end
 end

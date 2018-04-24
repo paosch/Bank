@@ -18,4 +18,8 @@ class Account
     @balance -= amount
     display_balance
   end
+
+  def print_col_names
+    print "#{'Date'.ljust(10)}" + "#{'Credit'.center(10)}" + "#{'Debit'.center(10)}" + "#{'Balance'.rjust(10)}"
+  end
 end
