@@ -1,5 +1,4 @@
 require 'printer'
-require 'account'
 
 describe Printer do
   subject(:printer) { Printer.new }
