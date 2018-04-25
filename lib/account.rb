@@ -7,7 +7,7 @@ class Account
   end
 
   def display_balance
-    p "Your current balance is £#{@balance}"
+    "Your current balance is £#{@balance}"
   end
 
   def deposit(amount)
