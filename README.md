@@ -13,6 +13,7 @@ This is a simple bank program in the Ruby language, written in order to:
 
 ## Approach
 - I started by drawing a flow diagram
+
 ![alt text](https://raw.githubusercontent.com/paosch/Bank/45421b13d5e1b6c1b5aeccad4b92ef8b180fbd19/Untitled%20Diagram.png)
 
 - I created the following user stories:
