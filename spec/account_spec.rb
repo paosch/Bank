@@ -4,7 +4,6 @@ describe Account do
   subject(:account) { Account.new(10) }
   describe '#display_balance' do
     it 'shows current balance' do
-      account = Account.new(10)
       expect(account.display_balance).to eq('Your current balance is £10')
     end
   end
@@ -21,9 +20,13 @@ describe Account do
   end
 
   describe '#withdraw' do
+    it 'raises error if not enough money in account' do
+      expect { account.withdraw(20) }.to raise_error('You have insufficient funds in your account')
+    end
+
     it 'customer can withdraw money from account' do
-      account.withdraw(15)
-      expect(account.balance).to eq(-5)
+      account.withdraw(10)
+      expect(account.balance).to eq(0)
     end
   end
 end
