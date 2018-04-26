@@ -40,7 +40,7 @@ I want to be able to see my bank account statement.
 - I used a TDD approach
 
 
-### Program structure
+## Program structure
 I created two classes:
 - Account, which handles deposit and withdrawal transactions
 - Printer, which does the printing of the bank account statement
@@ -54,3 +54,9 @@ Gems installed:
 - rspec
 - rubocop
 - simplecov
+
+
+## IRB screenshot
+
+<img width="922" alt="screen shot 2018-04-26 at 13 26 39" src="https://user-images.githubusercontent.com/33669463/39305654-c0f48104-4955-11e8-8f62-8b10e0acffa3.png">
+
