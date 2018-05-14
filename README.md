@@ -60,8 +60,6 @@ Gems installed:
 
 <img width="922" alt="screen shot 2018-04-26 at 13 26 39" src="https://user-images.githubusercontent.com/33669463/39305654-c0f48104-4955-11e8-8f62-8b10e0acffa3.png">
 
-## Test coverage
 
-![screen shot 2018-05-13 at 16 44 15](https://user-images.githubusercontent.com/33669463/39968975-6d27f3aa-56cd-11e8-9e61-8e58fee431c5.png)
 
 
