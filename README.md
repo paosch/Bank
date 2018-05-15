@@ -41,9 +41,11 @@ I want to be able to see my bank account statement.
 
 
 ## Program structure
-I created two classes:
+I created three classes:
 - Account, which handles deposit and withdrawal transactions
 - Printer, which does the printing of the bank account statement
+- Transactions, which pushes a transaction into a transactions array
+
 
 ## Technical details
 Ruby version 2.5.0
@@ -56,7 +58,12 @@ Gems installed:
 - simplecov
 
 
-## IRB screenshot
+## Test coverage
+
+![screen shot 2018-05-15 at 16 36 59](https://user-images.githubusercontent.com/33669463/40067589-644f7c0c-585e-11e8-8363-5030ed992a88.png)
+
+
+## IRB 
 
 <img width="922" alt="screen shot 2018-04-26 at 13 26 39" src="https://user-images.githubusercontent.com/33669463/39305654-c0f48104-4955-11e8-8f62-8b10e0acffa3.png">
 
