@@ -60,7 +60,7 @@ Gems installed:
 
 ## Test coverage
 
-![screen shot 2018-05-15 at 16 36 59](https://user-images.githubusercontent.com/33669463/40067589-644f7c0c-585e-11e8-8363-5030ed992a88.png)
+![screen shot 2018-05-31 at 11 48 43](https://user-images.githubusercontent.com/33669463/40778306-a388dcda-64c8-11e8-9c3c-448700a2459c.png)
 
 
 ## IRB 
