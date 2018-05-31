@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/paosch/Documents/Bank/spec/account_spec.rb": [
+      "/Users/paola/Documents/WEEK10/Bank/spec/account_spec.rb": [
         1,
         null,
         1,
@@ -35,7 +35,7 @@
         null,
         null
       ],
-      "/Users/paosch/Documents/Bank/lib/account.rb": [
+      "/Users/paola/Documents/WEEK10/Bank/lib/account.rb": [
         1,
         1,
         1,
@@ -61,7 +61,7 @@
         null,
         null
       ],
-      "/Users/paosch/Documents/Bank/lib/printer.rb": [
+      "/Users/paola/Documents/WEEK10/Bank/lib/printer.rb": [
         1,
         1,
         2,
@@ -75,7 +75,7 @@
         null,
         null
       ],
-      "/Users/paosch/Documents/Bank/spec/printer_spec.rb": [
+      "/Users/paola/Documents/WEEK10/Bank/spec/printer_spec.rb": [
         1,
         null,
         1,
@@ -93,8 +93,33 @@
         null,
         null,
         null
+      ],
+      "/Users/paola/Documents/WEEK10/Bank/spec/transaction_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/paola/Documents/WEEK10/Bank/lib/transaction.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1524661188
+    "timestamp": 1527757924
   }
 }
